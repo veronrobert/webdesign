@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	</head>
+	<!-- header content, body class/id, link to css -->
+	<body id = "indexBody" class = "body">
+		<link href="styles.css" rel="stylesheet" type="text/css" /> 
+	<header class = "indexHeaderBack">
+		<div class="content">
+			<hgroup>
+				<h2>Study Tips For All</h2>
+				<h2>{Group 27}</h2>
+				<i>W</i>
+			</hgroup>
+  
+  
+			</header>
+
+		<!-- section for navbar links -->
+		<section class="navBar">
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="pg2.html">Pg.2</a>
+				<a href="pg3.html">Pg.3</a>
+					
+			</nav>
+			
+	
+	
+
+		<section class="indexImage1 indexImage" onclick="galleryFunc1()"	 >
+			<p id = "galleryText1" class = "galleryText">Pay attention in class</p>
+		</section>
+		<script>
+		function galleryFunc1() {
+			
+			var galleryText1 = document.getElementById("galleryText1");
+			if (galleryText1.innerHTML === "Pay attention in class") {
+				galleryText1.innerHTML = "Paying attention in class is the first step to a successful study session. ask for help";
+			} else {
+				galleryText1.innerHTML = "Pay attention in class";
+					}
+					}
+			
+</script>
+	
+		<section class="indexImage2 indexImage"  onclick="galleryFunc2()">
+			<p id = "galleryText-2" class = "galleryText">Take Good notes</p>
+		</section>
+		<script>
+		function galleryFunc2() {
+			
+			var galleryText2 = document.getElementById("galleryText-2");
+			if (galleryText2.innerHTML === "Take Good notes") {
+				galleryText2.innerHTML = "Taking good notes is essentail for revision, it can be helpful to assume your making the notes to show someone who has never heard of the topic";
+			} else {
+				galleryText2.innerHTML = "Take Good notes";
+					}
+					}
+			
+		</script>
+	
+		<section class="indexImage3 indexImage" onclick="galleryFunc3()" >
+			<p id = "galleryText-3" class = "galleryText">Plan ahead</p>
+		</section>
+		<script>
+		function galleryFunc3() {
+			
+			var galleryText3 = document.getElementById("galleryText-3");
+			if (galleryText3.innerHTML === "Plan ahead") {
+				galleryText3.innerHTML = "Planning ahead is essential. do this for any upcoming tests or assaignments so that when you go to do them, you'll already have an understanding";
+			} else {
+				galleryText3.innerHTML = "Plan ahead";
+					}
+					}
+			
+</script>
+	</div>
+	
+	<div>
+		<section class="indexImage4 indexImage" onclick="galleryFunc4()" >
+			<p id = "galleryText-4" class = "galleryText">Ask For Help!</p>
+		</section>
+	<script>
+		function galleryFunc4() {
+			
+			var galleryText4 = document.getElementById("galleryText-4");
+			if (galleryText4.innerHTML === "Ask For Help!") {
+				galleryText4.innerHTML = "Beleive it or not, your teachers are there to help. don't feel ashamed in seeking advise";
+			} else {
+				galleryText4.innerHTML = "Ask For Help!";
+					}
+					}
+			
+</script>		
+	</div>
+
+	</body>

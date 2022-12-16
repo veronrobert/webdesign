@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/*  sets height of page to the browser height */
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 190vh;
+  
+}
+/* font, font size, font smoothing, readability */ 
+html {
+  font-family: 'Merriweather', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+/* background image for below navbar */
+.body {
+  background-image: url("indexBack.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+ 
+}
+
+/* sets header height, position, hides anything that overflows, sets background image, background size */
+header {
+	
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image:url('headerBack.jpg');
+  background-size: cover;
+}
+/* positions content of header, 'z-index' stacks the header content to the position '1' */
+header .content {
+  font-family: 'Merriweather', serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+/* sets margin of h1,h2 */
+header h1 {
+  margin: 0;
+  font-size:4vw;
+}
+/* h2 is uppercase, top margin lowered */
+header h2 {
+  text-transform: uppercase;
+  margin-top: -.5em;
+  font-size:2vw;
+}
+/* positions heading, margin, color, border, padding, background color, 'z-index' stacks heading to position '2' */
+header hgroup {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #FFF;
+  border: 5px solid #EDF5E1;
+  padding: .5em 3em;
+  background-color: rgba(5, 56, 107, 0.2);
+  z-index: 2;
+}
+
+
+/* Navbar position, size, decoration, color, */
+.navBar {
+  padding: 1em 0;
+  text-align: center;
+  background-color: #efefef;
+  font-size:1.5vw;
+  color: #EDF5E1;
+  position:relative
+}
+/* color for link to otherpages */
+.navBar a {
+  color: #EDF5E1;
+  text-decoration: none;
+}
+/* Navbar position, size */
+.navBar nav{
+  position:absolute;
+  top:0;
+  left:0;
+  background-color: #379683;
+  width:100%
+}
+/* Navbar font size, padding, 'inline-block' for with and height*/
+.navBar nav a{
+  padding:10px 30px;
+  font-size:1.3em;
+  display:inline-block
+}
+/* changes navbar color when hovering   */
+.navBar nav a:hover{
+  background:#05368B;
+  color:#EDF5E1
+}
+
+
+/* size, border, position ect. for first image in gallery */
+.indexImage1{
+	border:2.5px solid #FF8A33; 
+	box-sizing: border-box;
+	float:left;
+	width:400px;
+	height:300px;
+	margin: 50px 50px;
+	background-color: #379683;
+	top:-50px; 
+	left:-35px; 
+	display:block; 
+	z-index:999; 
+	cursor: pointer; 
+	transition-property: all; 
+	transition-duration: 0.3s; 
+	transition-timing-function: ease; 
+	
+	}
+
+.indexImage:hover { 
+	transform: scale(1.1); 
+	background-color: #edf5e1;
+
+}
+
+/* size, border, position ect. for second image in gallery */
+.indexImage2 {
+	border:2.5px solid #FF8A33; 
+	box-sizing: border-box;
+	float:left;
+	width:750px;
+	height:300px;
+	margin: 50px 50px;
+	background-color: #379683;	
+	top:-50px; 
+	left:-35px; 
+	display:block; 
+	z-index:999; 
+	cursor: pointer; 
+	transition-property: all; 
+	transition-duration: 0.3s; 
+	transition-timing-function: ease; 
+
+}
+/* size, border, position ect. for third image in gallery */
+.indexImage3{
+	border:2.5px solid #FF8A33; 
+	box-sizing: border-box;
+	float:left;
+	width:750px;
+	height:300px;
+	margin: 30px 30px;
+	background-color: #379683;	
+	top:-25px; 
+	left:-35px; 
+	display:block; 
+	z-index:999; 
+	cursor: pointer; 
+	transition-property: all; 
+	transition-duration: 0.3s; 
+	transition-timing-function: ease; 
+	
+}
+/* size, border, position ect. for fourth image in gallery */
+.indexImage4 {
+	border:2.5px solid #FF8A33; 
+	box-sizing: border-box;
+	float:left;
+	width:500px;
+	height:300px;
+	margin: 30px 30px;
+	background-color: #379683;	
+	top:-50px; 
+	left:-35px; 
+	display:block; 
+	z-index:999; 
+	cursor: pointer; 
+	transition-property: all; 
+	transition-duration: 0.3s; 
+	transition-timing-function: ease; 
+	
+}	
+.galleryText {
+	font-size:2vw;
+	text-align:center;
+	color:blue;
+}	
+
+
+
+@media screen and (max-width: 896px) {
+  .indexImage {
+    width:40% ; /* The width is 100%, when the viewport is 800px or smaller */
+	margin:5% 200px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .indexImage2 .indexImage3 {
+    width:40% ; /* The width is 100%, when the viewport is 800px or smaller */
+	float:left;
+	
+	
+  }
+}
+
+/* PG.3 GAME*/
+
+canvas { 
+	margin-top:25%;
+	margin-bottom:25%;
+	background: #05346B;
+	border: 5px solid black;	
+}
+
+.game {
+
+		padding:0%;
+		margin:0%;
+	}
+#game{
+	width: 450px;
+	height:200px;
+	border: 1px solid black;
+}
+#character{
+	width: 20px;
+	height:60px;
+	background-color: yellow;
+	position: relative;
+	top:140px;
+	
+}
+.animate{
+	animation: jump 500ms;
+}
+@keyframes jump{
+	0%{top: 150px;}
+	30%{top: 100px;}
+	70%{top: 100px;}
+	100%{top: 150px;}
+}
+#block{
+	width: 20px;
+	height: 20px;
+	background-color: black;
+	position: relative;
+	top:120px;
+	left:480px;
+	animation: block 1s infinite linear;
+}
+@keyframes block{
+	0%{left:480px;}
+	100%{left:-40px;}
+}
+
+.w3-light-grey{
+	height:330vh;
+}
+.button{
+	text-align: center;
+}
+
+form{
+	margin:10%;
+	color:black;
+}

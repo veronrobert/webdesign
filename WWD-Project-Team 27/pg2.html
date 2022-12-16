@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<!-- header content, body class/id, link to css -->
+	<body id = "indexBody" class = "body">
+		<link href="styles.css" rel="stylesheet" type="text/css" />
+			<header>
+			<div class="content">
+				<hgroup>
+					<h1>Study Tips For All</h1>
+					<h2>{Group 27}</h2>
+						<i>W</i>
+				</hgroup>
+  
+  
+			</header>
+
+		<!-- section for navbar links -->
+			<section class="navBar">
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="pg2.html">Pg.2</a>
+				<a href="pg3.html">Pg.3</a>
+				
+			</nav>
+			
+	<div class = "form">
+		<form name="myForm" action="pg3.html" onsubmit="return validateForm()" method="post">
+		  <label for="fname">First name:</label><br>
+		  <input type="text" id="fname" name="fname"><br>
+		  <label for="lname">Last name:</label><br>
+		  <input type="text" id="lname" name="lname">
+		<br>
+		<h2> where do you study? </h2>
+		  <input type="radio" id="home" name="fav_language" value="home">
+		  <label for="home">home</label><br>
+		  <input type="radio" id="school" name="fav_language" value="school">
+		  <label for="school">school</label><br>
+		  <input type="radio" id="college" name="fav_language" value="college">
+		  <label for="college">college</label>
+		 <br>
+		<h2> How often do you study?</h2>
+		  <input type="checkbox" id="Everyday" name="Everyday" value="Everyday">
+		  <label for="Everyday"> Everyday</label><br>
+		  <input type="checkbox" id="4Times" name="4Times" value="4Times">
+		  <label for="4Times">4 times aweek</label><br>
+		  <input type="checkbox" id="3Times" name="3Times" value="3Times">
+		  <label for="3Times">3 or less times a week</label>
+		  <br>
+		  <input type="submit" value="Submit">
+		</form>
+	</div>
+	
+	<script>
+	function validateForm() {
+	  let x = document.forms["myForm"].value;
+	  if (x == "") {
+		alert("Name must be filled out");
+		return false;
+	  }
+}
+	</script>
+		
+
+	</body>
